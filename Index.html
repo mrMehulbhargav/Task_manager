@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Main Content -->
+    <div id="main-content" class="container py-4">
+        <h1 class="text-center">Task Manager</h1>
+        <form id="task-form" class="mb-4">
+            <div class="mb-3">
+                <label for="task" class="form-label">Task:</label>
+                <input type="text" class="form-control" id="task" placeholder="Enter task">
+            </div>
+            <div class="mb-3">
+                <label for="category" class="form-label">Category:</label>
+                <select class="form-select" id="category">
+                    <option value="Work">Work</option>
+                    <option value="Personal">Personal</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="deadline" class="form-label">Deadline:</label>
+                <input type="date" class="form-control" id="deadline">
+            </div>
+            <button type="button" id="add-task-btn" class="btn btn-primary">Add Task</button>
+        </form>
+        
+        <div class="d-flex justify-content-between">
+            <button class="btn btn-outline-secondary" id="filter-pending">Show Pending Tasks</button>
+            <button class="btn btn-outline-secondary" id="filter-completed">Show Completed Tasks</button>
+        </div>
+
+        <ul id="task-list" class="list-group mt-4"></ul>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mehul Bhargav | 
+            <a href="https://www.linkedin.com/in/mrmehulbhargav" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/mrMehulbhargav" target="_blank">GitHub</a> |
+            <a href="https://leetcode.com/u/mrmehulbhargav/" target="_blank">LeetCode</a>
+        </p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="Js/script.js"></script>
+</body>
+</html>
